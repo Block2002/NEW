@@ -25,7 +25,7 @@ def command(commands: Union[str, List[str]]):
 async def brah(_, msg):
     chat_id = msg.chat.id
     try:
-        await msg.reply("**😍ᴠɪᴅᴇᴏ ᴄʜᴀᴛ sᴛᴀʀᴛᴇᴅ🥳**")
+        await msg.reply("**😉𝑺𝒕𝒂𝒓𝒕𝒆𝒅 𝒕𝒉𝒆 𝒗𝒊𝒅𝒆𝒐 𝒄𝒉𝒂𝒕... 𝒃𝒖𝒕 𝑰 𝒄𝒂𝒏’𝒕 𝒔𝒕𝒐𝒑 𝒔𝒕𝒂𝒓𝒊𝒏𝒈 𝒂𝒕 𝒚𝒐𝒖!❤️‍🩹**")
         await VIP.st_stream(chat_id)
         await set_loop(chat_id, 0)
     except Exception as e:
@@ -49,7 +49,7 @@ async def get_group_call(
             ).full_chat
         if full_chat is not None:
             return full_chat.call
-    await app.send_message(f"No group ᴠᴏɪᴄᴇ ᴄʜᴀᴛ Found** {err_msg}")
+    await app.send_message(f"𝑽𝒐𝒊𝒄𝒆 𝒄𝒉𝒂𝒕’𝒔 𝒈𝒐𝒏𝒆? 𝑮𝒖𝒆𝒔𝒔 𝒊𝒕’𝒔 𝒋𝒖𝒔𝒕 𝒎𝒆 𝒂𝒏𝒅 𝒎𝒚 𝒕𝒉𝒐𝒖𝒈𝒉𝒕𝒔... 𝒔𝒄𝒂𝒓𝒚!** {err_msg}")
     return False
 
 
@@ -60,9 +60,9 @@ async def start_group_call(c: Client, m: Message):
     ass = await assistant.get_me()
     assid = ass.id
     if assistant is None:
-        await app.send_message(chat_id, "ᴇʀʀᴏʀ ᴡɪᴛʜ ᴀꜱꜱɪꜱᴛᴀɴᴛ")
+        await app.send_message(chat_id, "𝑬𝒓𝒓𝒐𝒓 𝑾𝒊𝒕𝒉 𝑨𝒔𝒔𝒊𝒔𝒕𝒂𝒏𝒕")
         return
-    msg = await app.send_message(chat_id, "ꜱᴛᴀʀᴛɪɴɢ ᴛʜᴇ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ..")
+    msg = await app.send_message(chat_id, "𝑽𝒐𝒊𝒄𝒆 𝒄𝒉𝒂𝒕 𝒔𝒕𝒂𝒓𝒕𝒊𝒏𝒈! 𝑳𝒆𝒕’𝒔 𝒔𝒆𝒆 𝒘𝒉𝒐 𝒇𝒐𝒓𝒈𝒆𝒕𝒔 𝒕𝒐 𝒖𝒏𝒎𝒖𝒕𝒆 𝒇𝒊𝒓𝒔𝒕!..")
     try:
         peer = await assistant.resolve_peer(chat_id)
         await assistant.invoke(
@@ -74,7 +74,7 @@ async def start_group_call(c: Client, m: Message):
                 random_id=assistant.rnd_id() // 9000000000,
             )
         )
-        await msg.edit_text("ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ꜱᴛᴀʀᴛᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ⚡️~!")
+        await msg.edit_text("𝑽𝒐𝒊𝒄𝒆 𝒄𝒉𝒂𝒕’𝒔 𝒍𝒊𝒗𝒆, 𝒃𝒖𝒕 𝑰 𝒕𝒉𝒊𝒏𝒌 𝑰’𝒎 𝒕𝒉𝒆 𝒐𝒏𝒆 𝒘𝒉𝒐’𝒔 𝒏𝒆𝒓𝒗𝒐𝒖𝒔 𝒏𝒐𝒘!")
     except ChatAdminRequired:
         try:
             await app.promote_chat_member(
@@ -115,11 +115,11 @@ async def start_group_call(c: Client, m: Message):
                     can_promote_members=False,
                 ),
             )
-            await msg.edit_text("ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ꜱᴛᴀʀᴛᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ⚡️~!")
+            await msg.edit_text("𝑽𝒐𝒊𝒄𝒆 𝒄𝒉𝒂𝒕’𝒔 𝒍𝒊𝒗𝒆, 𝒃𝒖𝒕 𝑰 𝒕𝒉𝒊𝒏𝒌 𝑰’𝒎 𝒕𝒉𝒆 𝒐𝒏𝒆 𝒘𝒉𝒐’𝒔 𝒏𝒆𝒓𝒗𝒐𝒖𝒔 𝒏𝒐𝒘!")
             await VIP.st_stream(chat_id)
             await set_loop(chat_id, 0)
         except:
-            await msg.edit_text("ɢɪᴠᴇ ᴛʜᴇ ʙᴏᴛ ᴀʟʟ ᴘᴇʀᴍɪꜱꜱɪᴏɴꜱ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ ⚡")
+            await msg.edit_text("𝑮𝒊𝒗𝒆 𝒕𝒉𝒆 𝒃𝒐𝒕 𝒂𝒍𝒍 𝒑𝒆𝒓𝒎𝒊𝒔𝒔𝒊𝒐𝒏 𝒂𝒏𝒅 𝒕𝒓𝒚 𝒂𝒈𝒂𝒊𝒏 ⚡")
 
 
 @app.on_message(filters.command(["vcend", "endvc"], ["/", "!"]))
@@ -129,7 +129,7 @@ async def stop_group_call(c: Client, m: Message):
     ass = await assistant.get_me()
     assid = ass.id
     if assistant is None:
-        await app.send_message(chat_id, "ᴇʀʀᴏʀ ᴡɪᴛʜ ᴀꜱꜱɪꜱᴛᴀɴᴛ")
+        await app.send_message(chat_id, "𝑬𝒓𝒓𝒐𝒓 𝑾𝒊𝒕𝒉 𝑨𝒔𝒔𝒊𝒔𝒕𝒂𝒏𝒕")
         return
     msg = await app.send_message(chat_id, "ᴄʟᴏꜱɪɴɢ ᴛʜᴇ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ..")
     try:
@@ -142,7 +142,7 @@ async def stop_group_call(c: Client, m: Message):
         ):
             return
         await assistant.invoke(DiscardGroupCall(call=group_call))
-        await msg.edit_text("ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ᴄʟᴏꜱᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ⚡️~!")
+        await msg.edit_text("𝑬𝒏𝒅𝒊𝒏𝒈 𝒕𝒉𝒊𝒔 𝒗𝒐𝒊𝒄𝒆 𝒄𝒐𝒏𝒗𝒆𝒓𝒔𝒂𝒕𝒊𝒐𝒏 𝒏𝒐𝒘~!")
     except Exception as e:
         if "GROUPCALL_FORBIDDEN" in str(e):
             try:
@@ -163,7 +163,7 @@ async def stop_group_call(c: Client, m: Message):
                 if not (
                     group_call := (
                         await get_group_call(
-                            assistant, m, err_msg=", ɢʀᴏᴜᴘ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ᴀʟʀᴇᴀᴅʏ ᴇɴᴅᴇᴅ"
+                            assistant, m, err_msg=", 𝑻𝒉𝒆 𝒈𝒓𝒐𝒖𝒑 𝒗𝒐𝒊𝒄𝒆 𝒄𝒉𝒂𝒕 𝒉𝒂𝒔 𝒂𝒍𝒓𝒆𝒂𝒅𝒚 𝒃𝒆𝒆𝒏 𝒄𝒐𝒏𝒄𝒍𝒖𝒅𝒆𝒅"
                         )
                     )
                 ):
@@ -183,8 +183,8 @@ async def stop_group_call(c: Client, m: Message):
                         can_promote_members=False,
                     ),
                 )
-                await msg.edit_text("ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ᴄʟᴏꜱᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ⚡️~!")
+                await msg.edit_text("𝑬𝒏𝒅𝒊𝒏𝒈 𝒕𝒉𝒊𝒔 𝒗𝒐𝒊𝒄𝒆 𝒄𝒐𝒏𝒗𝒆𝒓𝒔𝒂𝒕𝒊𝒐𝒏 𝒏𝒐𝒘~!")
                 await VIP.st_stream(chat_id)
                 await set_loop(chat_id, 0)
             except:
-                await msg.edit_text("ɢɪᴠᴇ ᴛʜᴇ ʙᴏᴛ ᴀʟʟ ᴘᴇʀᴍɪꜱꜱɪᴏɴꜱ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ")
+                await msg.edit_text("𝑮𝒊𝒗𝒆 𝒕𝒉𝒆 𝒃𝒐𝒕 𝒂𝒍𝒍 𝒑𝒆𝒓𝒎𝒊𝒔𝒔𝒊𝒐𝒏 𝒂𝒏𝒅 𝒕𝒓𝒚 𝒂𝒈𝒂𝒊𝒏")
