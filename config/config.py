@@ -18,16 +18,16 @@ load_dotenv()
 
 # Get it from my.telegram.org
 
-API_ID = int(getenv("API_ID", ""))
+API_ID = "12380656"
 
-API_HASH = getenv("API_HASH")
+API_HASH = "d927c13beaaf5110f25c505b7c071273"
 
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = "7788838360:AAFd5SqRDqlsbrIYNDzw0ffAlf23SZuHMUg"
 
 
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = "mongodb+srv://architect04:architect04@cluster0.fylqb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 
 CLEANMODE_DELETE_MINS = int(
@@ -69,12 +69,12 @@ SONG_DOWNLOAD_DURATION = int(
 
 
 # You'll need a Private Group ID for this.
-LOG_GROUP_ID = getenv("LOG_GROUP_ID", "")
+LOG_GROUP_ID = getenv("LOG_GROUP_ID", "-1002324478802")
 
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "1808943146").split())
+    map(int, getenv("OWNER_ID", "7252249791").split())
 )  # Input type must be interger
 
 
@@ -95,7 +95,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # For customized or modified Repository
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/THE-VIP-BOY-OP/VIP-MUSIC",
+    "https://github.com/Block2002/NEW",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
@@ -109,21 +109,21 @@ GIT_TOKEN = getenv(
 TOKEN_ALLOW = os.getenv("TOKEN_ALLOW", "False")
 
 # Auto Gcast/Broadcast Handler, Write:- [On / Off] During Hosting.
-AUTO_GCAST = os.getenv("AUTO_GCAST", "on")
+AUTO_GCAST = os.getenv("AUTO_GCAST", "off")
 
 # Auto Broadcast Message That You Want Use In Auto Broadcast In All Groups.
 AUTO_GCAST_MSG = getenv("AUTO_GCAST_MSG", "")
 
 # Only  Links formats are  accepted for this Var value.
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "https://t.me/VIP_CREATORS"
+    "SUPPORT_CHANNEL", "https://t.me/JESSICA_CHATTING"
 )  # Example:- https://t.me/VIP_CREATORS
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", "https://t.me/TG_FRIENDSS"
+    "SUPPORT_GROUP", "https://t.me/JESSICA_CHATTING"
 )  # Example:- https://t.me/TG_FRIENDSS
 
 SUPPORT_CHAT = getenv(
-    "SUPPORT_GROUP", "https://t.me/TG_FRIENDSS"
+    "SUPPORT_GROUP", "https://t.me/JESSICA_CHATTING"
 )  # Example:- https://t.me/TG_FRIENDSS
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", False)
@@ -186,7 +186,7 @@ SET_CMDS = getenv("SET_CMDS", "False")
 
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @VIPStringBot
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = "BQC86fAAoWae2ff5p_1ZpSW40pqG9fj5al1QNT4MYLxNFl8TlyijRu1yDgHm23mXa5lPwCM8GJXIXZnS9mfeTLAYZriUudaNSXbnsiEbFvCpAvGzLDGHzYVRzPIubKiURLLexibDFnOhFYnFVRGTXCAKNWKysOkZTbLZHhV2DVYMPSfVkVR9ztRqsWRrMCgysyLpgXXY0JQVOm54MIElgWhPDfD-dju6cu5Pl9qoy8Ev8Fc7opupAOVV9b1lUUVxgMbX1YVuswCG1hlCeKEmu17QB_cMPdBEQI9V4vTNVEpesVnfPg4jivhP79QYGIPNjQUbOM5ytg5I4vzmYm7C_ZoL6bp6ZgAAAAHD41iOAA"
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -219,17 +219,17 @@ autoclean = []
 
 START_IMG_URL = getenv(
     "START_IMG_URL",
-    "https://te.legra.ph/file/ecdeac045f4045c198bd6.jpg",
+    "https://graph.org/file/0126bfad93d85b2958106-2030751ad46db825d1.jpg",
 )
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "https://telegra.ph/file/91533956c91d0fd7c9f20.jpg",
+    "https://graph.org/file/0126bfad93d85b2958106-2030751ad46db825d1.jpg",
 )
 
 PLAYLIST_IMG_URL = getenv(
     "PLAYLIST_IMG_URL",
-    "https://telegra.ph/file/f4edfbd83ec3150284aae.jpg",
+    "https://graph.org/file/0126bfad93d85b2958106-2030751ad46db825d1.jpg",
 )
 
 GLOBAL_IMG_URL = getenv(
@@ -239,7 +239,7 @@ GLOBAL_IMG_URL = getenv(
 
 STATS_IMG_URL = getenv(
     "STATS_IMG_URL",
-    "https://telegra.ph/file/4dd9e2c231eaf7c290404.jpg",
+    "https://graph.org/file/0126bfad93d85b2958106-2030751ad46db825d1.jpg",
 )
 
 TELEGRAM_AUDIO_URL = getenv(
